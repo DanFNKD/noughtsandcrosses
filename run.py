@@ -1,6 +1,6 @@
 # Welcome message
 
-print("Welcome to Noughts & Crosses!")
+print("Welcome to Noughts and Crosses!")
 print("Let's play:")
 
 def create_board():
@@ -18,7 +18,7 @@ def create_board():
 
 def print_board(board):
     """
-    Prints the Noughts & Crosses board.
+    Prints the Noughts and Crosses board.
     """
     print(' ' + board['1'] + ' | ' + board['2'] + ' | ' + board['3'] + ' ')
     print('---+---+---')
