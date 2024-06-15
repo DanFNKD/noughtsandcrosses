@@ -1,3 +1,5 @@
+import random
+
 # Welcome message
 
 print("Welcome to Noughts and Crosses!")
