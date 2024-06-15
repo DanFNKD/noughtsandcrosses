@@ -26,5 +26,7 @@ def print_board(board):
     print('---+---+---')
     print(' ' + board['7'] + ' | ' + board['8'] + ' | ' + board['9'] + ' ')
 
+board = create_board()
+
 print_board(board)
     
