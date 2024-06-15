@@ -44,3 +44,16 @@ def check_winner(board, player):
         if all(board[pos] == player for pos in combo):
             return True
     return False
+
+def player_move(board):
+    """
+    Gets and validates player's move.
+    Updates the board with the player's move.
+    """
+    while True:
+        move = input("Enter your move (1-9): ")
+        if move in board.keys() and board[move] == ' ':
+            return move
+        else:
+            print("Not a valid move. Please try again.")
+
