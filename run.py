@@ -13,8 +13,8 @@ def create_board():
     '1': ' ', '2': ' ', '3': ' ',
     '4': ' ', '5': ' ', '6': ' ',
     '7': ' ', '8': ' ', '9': ' ',
-}
-return board
+    }
+    return board
 
 def print_board(board):
     """
