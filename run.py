@@ -59,3 +59,14 @@ def player_move(board):
         else:
             print("Not a valid move. Please try again.")
 
+def computer_move(board):
+    """
+    Generates computer's move.
+    Randomly selects an available position on the board.
+    """
+    available_moves = []
+    for pos in board.keys():
+        if board[pos] == ' ':
+            available_moves.append(pos)
+    
+    return random.choice(available_moves)
