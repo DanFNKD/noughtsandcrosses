@@ -66,6 +66,20 @@ def computer_move(board):
     
     return random.choice(available_moves)
 
+def check_tie(board):
+    """
+    Checks if the game is a tie.
+    Does so by checking if the board is filled and if
+    there has been a winner.
+    """
+    if ' ' in board.values():
+        return False
+    
+    if check_winner(board, 'X') or check_winner(board, 'O'):
+        return False
+    
+    return True
+
 def main():
     print("Welcome to Noughts and Crosses!")
     player_name = input("Please enter your name: ")
