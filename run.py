@@ -66,50 +66,50 @@ def computer_move(board):
     
     return random.choice(available_moves)
 
-    def main():
-        print("Welcome to Noughts and Crosses!")
-        player_name = input("Please enter your name: ")
-        print(f"Good luck {player_name}. Let's play!\n")
+def main():
+    print("Welcome to Noughts and Crosses!")
+    player_name = input("Please enter your name: ")
+    print(f"Good luck {player_name}. Let's play!\n")
 
-        board = create_board()
+    board = create_board()
+    print_board(board)
+
+    player_symbol = 'X'
+    computer_symbol = 'O'
+
+    while True:
+        #Player's move
+        player_move_pos = player_move(board)
+        board[player_move_pos] = player_symbol
         print_board(board)
 
-        player_symbol = 'X'
-        computer_symbol = 'O'
+        # Check for player win
+        if check_winner(board, player_symbol):
+            print(f"Congratulations {player_name}! You've won the game!\n")
+            break
 
-        while True:
-            #Player's move
-            player_move_pos = player_move(board)
-            board[player_move_pos] = player_symbol
-            print_board(board)
+        # Check for tie
+        if check_tie(board):
+            print("It's a tie. What not play again?\n")
+            break
 
-            # Check for player win
-            if check_winner(board, player_symbol):
-                print(f"Congratulations {player_name}! You've won the game!\n")
-                break
+        # Computer's move
+        print("Computer's turn:")
+        computer_move_pos = computer_move(board)
+        board[computer_move_pos] = computer_symbol
+        print_board(board)
 
-            # Check for tie
-            if check_tie(board):
-                print("It's a tie. What not play again?\n")
-                break
-
-            # Computer's move
-            print("Computer's turn:")
-            computer_move_pos = computer_move(board)
-            board[computer_move_pos] = computer_symbol
-            print_board(board)
-
-            # Check for computer win
-            if check_winner(board, computer_symbol)
+        # Check for computer win
+        if check_winner(board, computer_symbol):
             print("Computer wins! Unlucky {player_name}!")
             break
 
-            # Check for tie
-            if check_tie(board):
-                print("It's a tie. What not play again?\n")
-                break
+        # Check for tie
+        if check_tie(board):
+            print("It's a tie. What not play again?\n")
+            break
 
-
+main()
 
 
 
