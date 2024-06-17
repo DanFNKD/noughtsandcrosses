@@ -71,3 +71,9 @@ def computer_move(board):
         player_name = input("Please enter your name: ")
         print(f"Good luck {player_name}. Let's play!\n")
 
+        board = create_board()
+        print_board(board)
+
+        player_symbol = 'X'
+        computer_symbol = 'O'
+
