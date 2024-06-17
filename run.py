@@ -37,8 +37,8 @@ def check_winner(board, player):
     Returns True if the player wins and false if not.
     """
     winning_combos = [
-        ['1', '2', '3'], ['4', '5', '6'], ['7', '8', '9'] # Rows
-        ['1', '4', '7'], ['2', '5', '8'], ['3', '6', '9'] # Columns
+        ['1', '2', '3'], ['4', '5', '6'], ['7', '8', '9'], # Rows
+        ['1', '4', '7'], ['2', '5', '8'], ['3', '6', '9'], # Columns
         ['1', '5', '9'], ['3', '5', '7'] # Diagonals
     ]
     for combo in winning_combos:
