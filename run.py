@@ -72,5 +72,6 @@ def computer_move(board):
 
     def main():
         print("Welcome to Noughts and Crosses!")
-        print("Let's play:")
+        player_name = input("Please enter your name: ")
+        print(f"Good luck {player_name}. Let's play!\n")
 
