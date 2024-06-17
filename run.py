@@ -77,3 +77,8 @@ def computer_move(board):
         player_symbol = 'X'
         computer_symbol = 'O'
 
+        while True:
+            player_move_pos = player_move(board)
+            board[player_move_pos] = player_symbol
+            print_board(board)
+
