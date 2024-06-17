@@ -2,8 +2,7 @@ import random
 
 # Welcome message
 
-print("Welcome to Noughts and Crosses!")
-print("Let's play:")
+
 
 def create_board():
     """
@@ -70,3 +69,8 @@ def computer_move(board):
             available_moves.append(pos)
     
     return random.choice(available_moves)
+
+    def main():
+        print("Welcome to Noughts and Crosses!")
+        print("Let's play:")
+
