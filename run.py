@@ -82,3 +82,12 @@ def computer_move(board):
             board[player_move_pos] = player_symbol
             print_board(board)
 
+            # Check for player win
+            if check_winner(board, player_symbol):
+                print(f"Congratulations {player_name}! You've won the game!\n")
+                break
+            # Check for tie
+            if check_tie(board):
+                print("It's a try. What not play again?\n")
+                break
+
