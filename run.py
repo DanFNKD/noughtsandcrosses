@@ -90,7 +90,7 @@ def computer_move(board):
 
             # Check for tie
             if check_tie(board):
-                print("It's a try. What not play again?\n")
+                print("It's a tie. What not play again?\n")
                 break
 
             # Computer's move
@@ -99,6 +99,17 @@ def computer_move(board):
             board[computer_move_pos] = computer_symbol
             print_board(board)
 
-            
+            # Check for computer win
+            if check_winner(board, computer_symbol)
+            print("Computer wins! Unlucky {player_name}!")
+            break
+
+            # Check for tie
+            if check_tie(board):
+                print("It's a tie. What not play again?\n")
+                break
+
+
+
 
 
