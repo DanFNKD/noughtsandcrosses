@@ -1,9 +1,5 @@
 import random
 
-# Welcome message
-
-
-
 def create_board():
     """
     Created the board
