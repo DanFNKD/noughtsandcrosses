@@ -142,7 +142,7 @@ def main():
 
             # Check for computer win
             if check_winner(board, computer_symbol):
-                print("Computer wins! Unlucky {player_name}!")
+                print(f"Computer wins! Unlucky {player_name}!")
                 break
 
             # Check for tie
