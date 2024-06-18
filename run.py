@@ -111,50 +111,51 @@ def main():
     player_name = get_player_name()
     print(f"Good luck {player_name}. Let's play!\n")
 
-    board = create_board()
-    print_board(board)
-
-    player_symbol = 'X'
-    computer_symbol = 'O'
-
     while True:
-        #Player's move
-        player_move_pos = player_move(board)
-        board[player_move_pos] = player_symbol
+        board = create_board()
         print_board(board)
 
-        # Check for player win
-        if check_winner(board, player_symbol):
-            print(f"Congratulations {player_name}! You've won the game!\n")
-            break
+        player_symbol = 'X'
+        computer_symbol = 'O'
 
-        # Check for tie
-        if check_tie(board):
-            print("It's a tie. What not play again?\n")
-            break
+        while True:
+            #Player's move
+            player_move_pos = player_move(board)
+            board[player_move_pos] = player_symbol
+            print_board(board)
 
-        # Computer's move
-        print("Computer's turn:")
-        computer_move_pos = computer_move(board)
-        board[computer_move_pos] = computer_symbol
-        print_board(board)
+            # Check for player win
+            if check_winner(board, player_symbol):
+                print(f"Congratulations {player_name}! You've won the game!\n")
+                break
 
-        # Check for computer win
-        if check_winner(board, computer_symbol):
-            print("Computer wins! Unlucky {player_name}!")
-            break
+            # Check for tie
+            if check_tie(board):
+                print("It's a tie. What not play again?\n")
+                break
 
-        # Check for tie
-        if check_tie(board):
-            print("It's a tie. What not play again?\n")
-            break
+            # Computer's move
+            print("Computer's turn:")
+            computer_move_pos = computer_move(board)
+            board[computer_move_pos] = computer_symbol
+            print_board(board)
+
+            # Check for computer win
+            if check_winner(board, computer_symbol):
+                print("Computer wins! Unlucky {player_name}!")
+                break
+
+            # Check for tie
+            if check_tie(board):
+                print("It's a tie. What not play again?\n")
+                break
 
         # Asking if the player wants to play again
-    if not new_game():
-        print("Thanks for playing!")
-        return
-
-        print("\nStarting a new game...\n")
+        if not new_game():
+            print("Thanks for playing!")
+            return
+        else:
+            print("\nStarting a new game...\n")
 
 main()
 
