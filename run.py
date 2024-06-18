@@ -92,6 +92,24 @@ def get_player_name():
         else:
             print("Please enter a valid name.")
 
+def new_game():
+    """
+    Offers the player the chance to play another
+    game of Noughts and Crosses.
+    """
+    while True:
+        response = input("Do you want to play again? (yes/no): ").lower()
+        if response in ['yes', 'y']:
+            return True
+        elif response in ['no', 'n']:
+            return False
+        else:
+            print("Invalid input. Please enter 'yes', 'y', 'no' or 'n'.")
+
+print("Testing new game")
+play_again = new_game()
+print(f"Player wants to play again")
+
 def main():
     print("Welcome to Noughts and Crosses!")
     player_name = get_player_name()
