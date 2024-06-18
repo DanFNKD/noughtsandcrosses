@@ -80,9 +80,21 @@ def check_tie(board):
     
     return True
 
+def get_player_name():
+    """
+    Ensures the player enters at least one non-space character.
+    Returns a valid player name.
+    """
+    while True:
+        player_name = input("Please enter your name: ")
+        if player_name.strip():
+            return player_name
+        else:
+            print("Please enter a valid name.")
+
 def main():
     print("Welcome to Noughts and Crosses!")
-    player_name = input("Please enter your name: ")
+    player_name = get_player_name()
     print(f"Good luck {player_name}. Let's play!\n")
 
     board = create_board()
