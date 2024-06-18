@@ -106,10 +106,6 @@ def new_game():
         else:
             print("Invalid input. Please enter 'yes', 'y', 'no' or 'n'.")
 
-print("Testing new game")
-play_again = new_game()
-print(f"Player wants to play again")
-
 def main():
     print("Welcome to Noughts and Crosses!")
     player_name = get_player_name()
@@ -152,6 +148,13 @@ def main():
         if check_tie(board):
             print("It's a tie. What not play again?\n")
             break
+
+        # Asking if the player wants to play again
+    if not new_game():
+        print("Thanks for playing!")
+        return
+
+        print("\nStarting a new game...\n")
 
 main()
 
