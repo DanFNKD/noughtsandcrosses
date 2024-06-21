@@ -1,6 +1,72 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome,
+Noughts and Crosses is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
+
+Noughts and Crosses (or tic-tac-toe in American English) is traditionally a paper-and-pencil game for 2 players who take turns marking the spaces in a 3x3 grid with an O or X (Noughts or Crosses).
+
+The player who succeeds in placing 3 of their marks in a row (horizontally, vertically or diagonally) is the winner. It is a solved game, with a forced draw assuming best play from both players. You can read more about it on Wikipedia (https://en.wikipedia.org/wiki/Tic-tac-toe)
+
+# Table of Content
+
++ UX
+    + Site Purpose
+    + User Demographic
+    + User Goals
+        + First time player
+        + Frequent player
++ Design
++ Features
+    + Existing Features
+        + Premier League Logo and Heading
+        + Quiz Area
+        + Score Area
+        + Prize Area
+        + Features Left to Implement
++ Technologies Used
++ Testing
+    + Validator Testing
+    + Unfixed Bugs
++ Deployment
++ Credits
+    + Content
+    + Media
+
+# UX
+
+## Site Purpose
+
+To allow players to participate in a quick, enjoyable game against an AI opponent.
+
+## User Demographics
+
+Anyone that is interested in playing the game.
+
+## User Goals
+
+### First time player
+
+- As a first time player, I want to learn more about the game.
+- As a first time player, I want to improve my knowledge of basic strategy.
+- As a first time player, I want to be guided on how to play the game.
+- As a first time player, I want to input my name and receive customised messages.
+- As a first time player, I want to exit the game upon completion.
+- As a first time player, I want the opportunity to play again without restarting the App.
+
+### Frequent player
+
+- As a frequent player, I want to keep playing to increase my knowledge.
+- As a frequent player, I want to be tested by the AI to improve my ability.
+- As a frequent player, I want to see how I am getting on vs the AI.
+- As a frequent player, I want to test my ability against another Human player.
+
+# Features
+
+## Existing Features
+
+### Landing screen:
+
+### 
+
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
 
