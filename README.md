@@ -10,38 +10,38 @@ The player who succeeds in placing 3 of their marks in a row (horizontally, vert
 
 ## Table of Content
 
-+ UX
-    + Site Purpose
-    + User Demographic
-    + User Goals
-        + First time player
-        + Frequent player
-+ Design
-+ Features
-    + Existing Features
-        + Landing screen
-        + Game start
-        + First move
-        + Completed game
-        + New game
-        + Name validation
-        + Move validation
-        + Game validation
-    + Features left to implement
-+ Technologies Used
-    + Main Languages Used
-    + Frameworks, Libraries & Programs
-+ Testing
-    + App Testing
-        + Terminal compatibility
-        + Application features
-        + Validation
-        + Conclusion    
-    + Validator Testing
-    + Bugs
-    + Unfixed Bugs
-+ Deployment
-+ Credits
++ [UX](#ux "UX")
+    + [Site Purpose](#site-purpose "Site Purpose")
+    + [User Demographic](#user-demographic "User Demographic") 
+    + [User Goals](#user-goals "User Goals")
+        + [First time player](#first-time-player "First time player")
+        + [Frequent player](#frequent-player "Frequent player")
++ [Design](#design "Design")
++ [Features](#features "Features")
+    + [Existing Features](#existing-features "Existing Features")
+        + [Landing screen](#landing-screen "Landing Screen")
+        + [Game start](#game-start "Game start")
+        + [First move](#first-move "First move")
+        + [Completed game](#completed-game "Completed game")
+        + [New game](#new-game "New game")
+        + [Name validation](#name-validation "Name validation")
+        + [Move validation](#move-validation "Move validation")
+        + [Game validation](#game-validation "Game validation")
+    + [Features left to implement](#features-left-to-implement "Features left to implement")
++ [Technologies Used](#technologies-used "Technologies Used")
+    + [Main Languages Used](#main-languages-used "Main Languages Used")
+    + [Frameworks, Libraries & Programs](#frameworks-libraries--programs "Frameworks, Libraries & Programs")
++ [Testing](#testing "Testing")
+    + [App Testing](#app-testing "App Testing")
+        + [Terminal compatibility](#terminal-compatibility "Terminal compatibility")
+        + [Application features](#application-features "Application features")
+        + [Validation](#validation "Validation")
+        + [Conclusion](#conclusion "Conclusion")
+    + [Validator Testing](#validator-testing "Validator Testing")
+    + [Bugs](#bugs "Bugs")
+    + [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
++ [Deployment](#deployment "Deployment")
++ [Credits](#credits "Credits")
 
 ## UX
 
@@ -124,6 +124,8 @@ Anyone that is interested in playing the game.
 - Heroku
 
 ## Testing
+
+### App Testing
 
 #### Terminal compatibility:
 
