@@ -15,7 +15,6 @@ def create_board():
     return board
 
 
-
 def print_board(board):
     """
     Prints the Noughts and Crosses board.
@@ -25,6 +24,7 @@ def print_board(board):
     print(' ' + board['4'] + ' | ' + board['5'] + ' | ' + board['6'] + ' ')
     print('---+---+---')
     print(' ' + board['7'] + ' | ' + board['8'] + ' | ' + board['9'] + ' ')
+
 
 board = create_board()
 
