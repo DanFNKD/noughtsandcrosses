@@ -19,11 +19,14 @@ The player who succeeds in placing 3 of their marks in a row (horizontally, vert
 + Design
 + Features
     + Existing Features
-        + Premier League Logo and Heading
-        + Quiz Area
-        + Score Area
-        + Prize Area
-        + Features Left to Implement
+        + Landing screen
+        + Game start
+        + First move
+        + Completed game
+        + New game
+        + Name validation
+        + Move validation
+        + Game validation
 + Technologies Used
     + Main Languages Used
     + Frameworks, Libraries & Programs
@@ -32,8 +35,6 @@ The player who succeeds in placing 3 of their marks in a row (horizontally, vert
     + Unfixed Bugs
 + Deployment
 + Credits
-    + Content
-    + Media
 
 ## UX
 
@@ -68,20 +69,28 @@ Anyone that is interested in playing the game.
 ### Existing Features
 
 #### Landing screen:
+![Landing screen](assets/images/landingpage.png)
 
 #### Game start:
+![Game start](assets/images/nameinput.png)
 
 #### First move:
+![First move](assets/images/firstmove.png)
 
 #### Completed game:
+![Completed game](assets/images/completedgame.png)
 
 #### New game:
+![New game](assets/images/newgame.png)
 
 #### Name validation:
+![Name validation](assets/images/namevalidation.png)
 
 #### Move validation:
+![Move validation](assets/images/namevalidation.png)
 
 #### Game validation:
+![Game validation](assets/images/gamevalidation.png)
 
 ### Features left to implement:
 
@@ -131,6 +140,7 @@ The testing confirmed that the Noughts and Crosses game functions as expected, p
 ### Validator Testing
 
 - run.py passes through the [CI Python Linter](https://pep8ci.herokuapp.com) with no issues found.
+![CI Python Linter Validation](assets/images/pythonlinter.png)
 
 ### Bugs
 
