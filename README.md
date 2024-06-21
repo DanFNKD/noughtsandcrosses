@@ -1,12 +1,14 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
+# Noughts and Crosses
+
 Noughts and Crosses is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
 
 Noughts and Crosses (or tic-tac-toe in American English) is traditionally a paper-and-pencil game for 2 players who take turns marking the spaces in a 3x3 grid with an O or X (Noughts or Crosses).
 
 The player who succeeds in placing 3 of their marks in a row (horizontally, vertically or diagonally) is the winner. It is a solved game, with a forced draw assuming best play from both players. You can read more about it on Wikipedia (https://en.wikipedia.org/wiki/Tic-tac-toe)
 
-# Table of Content
+## Table of Content
 
 + UX
     + Site Purpose
@@ -23,6 +25,8 @@ The player who succeeds in placing 3 of their marks in a row (horizontally, vert
         + Prize Area
         + Features Left to Implement
 + Technologies Used
+    + Main Languages Used
+    + Frameworks, Libraries & Programs
 + Testing
     + Validator Testing
     + Unfixed Bugs
@@ -31,19 +35,19 @@ The player who succeeds in placing 3 of their marks in a row (horizontally, vert
     + Content
     + Media
 
-# UX
+## UX
 
-## Site Purpose
+### Site Purpose
 
 To allow players to participate in a quick, enjoyable game against an AI opponent.
 
-## User Demographics
+### User Demographics
 
 Anyone that is interested in playing the game.
 
-## User Goals
+### User Goals
 
-### First time player
+#### First time player
 
 - As a first time player, I want to learn more about the game.
 - As a first time player, I want to improve my knowledge of basic strategy.
@@ -52,34 +56,34 @@ Anyone that is interested in playing the game.
 - As a first time player, I want to exit the game upon completion.
 - As a first time player, I want the opportunity to play again without restarting the App.
 
-### Frequent player
+#### Frequent player
 
 - As a frequent player, I want to keep playing to increase my knowledge.
 - As a frequent player, I want to be tested by the AI to improve my ability.
 - As a frequent player, I want to see how I am getting on vs the AI.
 - As a frequent player, I want to test my ability against another Human player.
 
-# Features
+## Features
 
-## Existing Features
+### Existing Features
 
-### Landing screen:
+#### Landing screen:
 
-### Game start:
+#### Game start:
 
-### First move:
+#### First move:
 
-### Completed game:
+#### Completed game:
 
-### New game:
+#### New game:
 
-### Name validation:
+#### Name validation:
 
-### Move validation:
+#### Move validation:
 
-### Game validation:
+#### Game validation:
 
-## Features left to implement:
+### Features left to implement:
 
 - Randomise starting order - Switching between the player and the computer would improve the user experience/difficulty.
 
@@ -91,54 +95,77 @@ Anyone that is interested in playing the game.
 
 - Ability to play with 2 user players - Allowing multiple players to participate would add depth to the game and increase user adoption.
 
-# Testing
+## Technologies Used
 
-## Terminal compatibility:
+### Main Languages Used:
+
+- Python
+
+### Frameworks, Libraries & Programs:
+
+- GitPod
+- GitHub
+- Heroku
+
+## Testing
+
+#### Terminal compatibility:
 
 I tested the App in the IDE and on the deployed App’s terminal.
 Confirmed that the App worked as expected.
 
-## Application features:
+#### Application features:
 
 I tested all features, including entering the inputs.
 Confirmed that the App worked as expected without any errors.
 
-## Validation:
+#### Validation:
 
 I tested the incorrect input and associated error messages.
 Confirmed that the appropriate error messages displayed when invalid data was entered.
 
-## Conclusion:
+#### Conclusion:
 
 The testing confirmed that the Noughts and Crosses game functions as expected, providing a simple, enjoyable experience to the player.
 
+### Validator Testing
 
+- run.py passes through the [CI Python Linter](https://pep8ci.herokuapp.com) with no issues found.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+### Bugs
 
-## Reminders
+- Players were able to enter a space as their name. Resolved by adding the .strip() function.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+### Unfixed Bugs
 
-## Creating the Heroku app
+- There are no unfixed bugs.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Deployment
 
-1. `heroku/python`
-2. `heroku/nodejs`
+The App was deployed via Heroku. The steps to do so are as follows:
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+1. Create an account with Heroku
+2. Click “new” to create a new App from the dashboard
+3. Enter a unique App name
+4. Select region
+5. Click “Create App”
+6. Navigate to the “Settings” tab
+7. Scroll down to Config Vars and click “Reveal Config Vars”
+8. Enter “Port” as the key and “8000” as the value.
+9. Click Add
+10. Navigate to Buildpacks and click “Add buildpack”
+11. Add Python into the Buildpack
+12. Add NodeJS into the Buildpack
+13. Navigate to the “Deploy” tab
+14. Select GitHub as the Deployment method
+15. Search for repository name
+16. Select Branch to build from
+17. Connect via the “Connect” button
+18. Choose either “Automatic” or “Manual”. (I chose Manual)
+19. Build App
+20. Once completed, click “View” to visit the deployed App
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Credits
 
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+- I would like to thank my mentor Martina Terlovic for her assistance and support throughout the project.
+- Advice on how to draw the board was taken from [Reddit](https://www.reddit.com/r/learnpython/comments/l97our/drawing_a_tictactoe_game_board/?rdt=50795)
