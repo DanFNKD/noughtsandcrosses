@@ -6,7 +6,7 @@ Noughts and Crosses is a Python terminal game, which runs in the Code Institute 
 
 Noughts and Crosses (or tic-tac-toe in American English) is traditionally a paper-and-pencil game for 2 players who take turns marking the spaces in a 3x3 grid with an O or X (Noughts or Crosses).
 
-The player who succeeds in placing 3 of their marks in a row (horizontally, vertically or diagonally) is the winner. It is a solved game, with a forced draw assuming best play from both players. You can read more about it on Wikipedia (https://en.wikipedia.org/wiki/Tic-tac-toe)
+The player who succeeds in placing 3 of their marks in a row (horizontally, vertically or diagonally) is the winner. It is a solved game, with a forced draw assuming best play from both players. You can read more about it on [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
 
 ## Table of Content
 
@@ -27,11 +27,18 @@ The player who succeeds in placing 3 of their marks in a row (horizontally, vert
         + Name validation
         + Move validation
         + Game validation
+    + Features left to implement
 + Technologies Used
     + Main Languages Used
     + Frameworks, Libraries & Programs
 + Testing
+    + App Testing
+        + Terminal compatibility
+        + Application features
+        + Validation
+        + Conclusion    
     + Validator Testing
+    + Bugs
     + Unfixed Bugs
 + Deployment
 + Credits
@@ -140,6 +147,7 @@ The testing confirmed that the Noughts and Crosses game functions as expected, p
 ### Validator Testing
 
 - run.py passes through the [CI Python Linter](https://pep8ci.herokuapp.com) with no issues found.
+
 ![CI Python Linter Validation](assets/images/pythonlinter.png)
 
 ### Bugs
