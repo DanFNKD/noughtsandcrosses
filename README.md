@@ -65,7 +65,53 @@ Anyone that is interested in playing the game.
 
 ### Landing screen:
 
-### 
+### Game start:
+
+### First move:
+
+### Completed game:
+
+### New game:
+
+### Name validation:
+
+### Move validation:
+
+### Game validation:
+
+## Features left to implement:
+
+- Randomise starting order - Switching between the player and the computer would improve the user experience/difficulty.
+
+- Increase AI intelligence - Code the AI to have some knowledge of basic strategy.
+
+- Difficulty levels - Linked to AI knowing basic strategy, it would be fantastic to offer different difficulty levels to the player. This would increase their experience whilst allowing them to improve their ability.
+
+- Record the score - Letting the player keep track of the score would help with immersion.
+
+- Ability to play with 2 user players - Allowing multiple players to participate would add depth to the game and increase user adoption.
+
+# Testing
+
+## Terminal compatibility:
+
+I tested the App in the IDE and on the deployed App’s terminal.
+Confirmed that the App worked as expected.
+
+## Application features:
+
+I tested all features, including entering the inputs.
+Confirmed that the App worked as expected without any errors.
+
+## Validation:
+
+I tested the incorrect input and associated error messages.
+Confirmed that the appropriate error messages displayed when invalid data was entered.
+
+## Conclusion:
+
+The testing confirmed that the Noughts and Crosses game functions as expected, providing a simple, enjoyable experience to the player.
+
 
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**

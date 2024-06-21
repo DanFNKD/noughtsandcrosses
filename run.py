@@ -1,5 +1,6 @@
 import random
 
+
 def create_board():
     """
     Created the board
@@ -7,11 +8,13 @@ def create_board():
     the board.
     """
     board = {
-    '1': ' ', '2': ' ', '3': ' ',
-    '4': ' ', '5': ' ', '6': ' ',
-    '7': ' ', '8': ' ', '9': ' ',
+        '1': ' ', '2': ' ', '3': ' ',
+        '4': ' ', '5': ' ', '6': ' ',
+        '7': ' ', '8': ' ', '9': ' ',
     }
     return board
+
+
 
 def print_board(board):
     """
@@ -27,20 +30,22 @@ board = create_board()
 
 print_board(board)
 
+
 def check_winner(board, player):
     """
     Checks if the player has won.
     Returns True if the player wins and false if not.
     """
     winning_combos = [
-        ['1', '2', '3'], ['4', '5', '6'], ['7', '8', '9'], # Rows
-        ['1', '4', '7'], ['2', '5', '8'], ['3', '6', '9'], # Columns
-        ['1', '5', '9'], ['3', '5', '7'] # Diagonals
+        ['1', '2', '3'], ['4', '5', '6'], ['7', '8', '9'],  # Rows
+        ['1', '4', '7'], ['2', '5', '8'], ['3', '6', '9'],  # Columns
+        ['1', '5', '9'], ['3', '5', '7']  # Diagonals
     ]
     for combo in winning_combos:
         if all(board[pos] == player for pos in combo):
             return True
     return False
+
 
 def player_move(board):
     """
@@ -54,6 +59,7 @@ def player_move(board):
         else:
             print("Not a valid move. Please try again.")
 
+
 def computer_move(board):
     """
     Generates computer's move.
@@ -63,8 +69,9 @@ def computer_move(board):
     for pos in board.keys():
         if board[pos] == ' ':
             available_moves.append(pos)
-    
+
     return random.choice(available_moves)
+
 
 def check_tie(board):
     """
@@ -74,11 +81,12 @@ def check_tie(board):
     """
     if ' ' in board.values():
         return False
-    
+
     if check_winner(board, 'X') or check_winner(board, 'O'):
         return False
-    
+
     return True
+
 
 def get_player_name():
     """
@@ -91,6 +99,7 @@ def get_player_name():
             return player_name
         else:
             print("Please enter a valid name.")
+
 
 def new_game():
     """
@@ -106,6 +115,7 @@ def new_game():
         else:
             print("Invalid input. Please enter 'yes', 'y', 'no' or 'n'.")
 
+
 def main():
     print("Welcome to Noughts and Crosses!")
     player_name = get_player_name()
@@ -119,7 +129,7 @@ def main():
         computer_symbol = 'O'
 
         while True:
-            #Player's move
+            # Player's move
             player_move_pos = player_move(board)
             board[player_move_pos] = player_symbol
             print_board(board)
@@ -157,7 +167,5 @@ def main():
         else:
             print("\nStarting a new game...\n")
 
+
 main()
-
-
-
