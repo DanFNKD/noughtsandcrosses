@@ -4,9 +4,9 @@ Noughts and Crosses is a Python terminal game, which runs in the Code Institute 
 
 Noughts and Crosses (or tic-tac-toe in American English) is traditionally a paper-and-pencil game for 2 players who take turns marking the spaces in a 3x3 grid with an O or X (Noughts or Crosses).
 
-The player who succeeds in placing 3 of their marks in a row (horizontally, vertically or diagonally) is the winner. It is a solved game, with a forced draw assuming best play from both players. You can read more about it on [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
+The player who succeeds in placing 3 of their marks in a row (horizontally, vertically or diagonally) is the winner. It is a solved game, with a forced draw assuming best play from both players. You can read more about it on [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe).
 
-## Table of Content
+## Table of Contents
 
 + [UX](#ux "UX")
     + [Site Purpose](#site-purpose "Site Purpose")
@@ -66,10 +66,14 @@ Anyone that is interested in playing the game.
 
 - As a frequent player, I want to keep playing to increase my knowledge.
 - As a frequent player, I want to be tested by the AI to improve my ability.
-- As a frequent player, I want to see how I am getting on vs the AI.
+- As a frequent player, I want to see how I am doing vs the AI.
 - As a frequent player, I want to test my ability against another Human player.
 
 ## Design
+
+### Flow chart
+
+I designed a flow chart for the project to help plan my code structure using [Lucid](https://lucid.app/).
 
 ![Flow chart](assets/images/flowchart.png)
 
@@ -124,6 +128,7 @@ Anyone that is interested in playing the game.
 - GitPod
 - GitHub
 - Heroku
+- Lucid
 
 ## Testing
 
@@ -150,17 +155,17 @@ The testing confirmed that the Noughts and Crosses game functions as expected, p
 
 ### Validator Testing
 
-- run.py passes through the [CI Python Linter](https://pep8ci.herokuapp.com) with no issues found.
+run.py passes through the [CI Python Linter](https://pep8ci.herokuapp.com) with no issues found.
 
 ![CI Python Linter Validation](assets/images/pythonlinter.png)
 
 ### Bugs
 
-- Players were able to enter a space as their name. Resolved by adding the .strip() function.
+Players were able to enter a space as their name. Resolved by adding the .strip() function.
 
 ### Unfixed Bugs
 
-- There are no unfixed bugs.
+There are no unfixed bugs.
 
 ## Deployment
 
