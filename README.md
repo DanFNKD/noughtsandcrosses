@@ -1,5 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
 # Noughts and Crosses
 
 Noughts and Crosses is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
@@ -70,6 +68,10 @@ Anyone that is interested in playing the game.
 - As a frequent player, I want to be tested by the AI to improve my ability.
 - As a frequent player, I want to see how I am getting on vs the AI.
 - As a frequent player, I want to test my ability against another Human player.
+
+## Design
+
+![Flow chart](assets/images/flowchart.png)
 
 ## Features
 
