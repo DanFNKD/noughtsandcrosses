@@ -195,4 +195,4 @@ The App was deployed via Heroku. The steps to do so are as follows:
 ## Credits
 
 - I would like to thank my mentor Martina Terlovic for her assistance and support throughout the project.
-- Advice on how to draw the board was taken from [Reddit](https://www.reddit.com/r/learnpython/comments/l97our/drawing_a_tictactoe_game_board/?rdt=50795)
+- Advice on how to draw the board was taken from [Reddit](https://www.reddit.com/r/learnpython/comments/l97our/drawing_a_tictactoe_game_board/?rdt=50795).
